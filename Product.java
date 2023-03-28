@@ -1,3 +1,5 @@
+import java.util.Set;
+
 public class Product {
     private String name;
     private double price;
@@ -31,6 +33,11 @@ public class Product {
 
     public void setCounter(int counter) {
         this.counter = counter;
+    }
+
+    public boolean sellCounter() {
+        this.counter--;
+        return counter>0;
     }
 
     @Override
