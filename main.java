@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class Main {
 
@@ -9,7 +10,7 @@ public class Main {
                 .addProduct(new Drinks("Coca Cola", 120, 2))
                 .addProduct(new DrinksGas("Aqua minerale", 80,3))
                 .addProduct(new DrinksWithOutGas("Aqua minerale", 89, 4));
-        System.out.println(mart);
+        System.out.println(mart.toString());
 
     }
 }
