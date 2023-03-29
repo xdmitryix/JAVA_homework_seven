@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class VendingMachine {
     private List <Product> products = new ArrayList<>();
@@ -31,7 +30,6 @@ public class VendingMachine {
             }
             this.moneyInMachine += target.getPrice();
         } catch (NullPointerException e) {
-//            System.out.println("Товар не найден");
             throw new Exception("Товар не найден", e);
         }
 
